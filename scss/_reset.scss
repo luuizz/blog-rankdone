@@ -10,3 +10,19 @@
 html {
     font-size: 62.5%;
 }
+
+button {
+    border: 0;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
