@@ -1,0 +1,16 @@
+// Global
+
+@import 'variables';
+@import 'mixins';
+@import 'fonts';
+@import 'headings';
+@import 'patterns';
+@import 'reset';
+@import 'grid';
+@import 'header';
+
+
+// Páginas - Se houver
+
+@import 'home';
+@import 'post';
