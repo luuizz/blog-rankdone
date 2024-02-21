@@ -32,6 +32,16 @@
     }
 }
 
+.sephr {
+    .container {
+        hr {
+            margin: 0;
+            border: 0;
+            border-bottom: 1px solid var(--gray-200);
+        }
+    }
+}
+
 .s-news {
     padding: 6.4rem 0;
     .container {
@@ -94,8 +104,94 @@
                     background-color: var(--purple-700);
                     border-radius: 0.4rem;
                     color: var(--white);
-                    max-width: 180px;
-                    min-width: auto;
+                    transition: background .3s ease;
+                    &:hover {
+                        background-color: var(--purple-500);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.s-all-posts {
+    padding: 6.4rem 0;
+    .container {
+        .top-info {
+            @include flex(row, flex-end, space-between);
+            margin-bottom: 6.4rem;
+            h2 {
+                font-size: 4rem;
+            }
+            a {
+                font-weight: 500;
+                font-size: 1.6rem;
+                text-decoration: underline;
+                color: var(--purple-800);
+                transition: color .3s ease;
+                &:hover {
+                    color: var(--purple-500);
+                }
+            }
+        }
+        .all {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 3.2rem;
+            margin-bottom: 6.4rem;
+        }
+        .btn-primary {
+            margin: 0 auto;
+            display: table;
+        }
+    }
+}
+
+.s-know {
+    padding: 12rem 0;
+    position: relative;
+    background-color: var(--purple-50);
+    &::after {
+        content: "";
+        width: 10.1rem;
+        height: 2.6rem;
+        position: absolute;
+        top: -0.1rem;
+        left: 50%;
+        transform: translateX(-50%);
+        background: url("../assets/divider.svg") no-repeat center center;
+    }
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .left-area {
+            width: 100%;
+            max-width: 52rem;
+            h2 {
+                font-size: 4rem;
+                margin-bottom: 1.6rem;
+            }
+            h4 {
+                color: var(--gray-800);
+                margin-bottom: 2.4rem;
+            }
+            p {
+                font-size: 1.4rem;
+                color: var(--gray-700);
+                margin-bottom: 2.4rem;
+            }
+        }
+        .right-area {
+            .image {
+                width: 100%;
+                max-width: 52rem;
+                overflow: hidden;
+                border-radius: 0.8rem;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
                 }
             }
         }
