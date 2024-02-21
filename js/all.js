@@ -1,1 +1,1 @@
-"use strict";
+"use strict";var btnMobile=document.getElementById("js-btn-mobile");btnMobile.addEventListener("click",function(){btnMobile.classList.toggle("is-active"),document.documentElement.classList.toggle("menu-opened")});
