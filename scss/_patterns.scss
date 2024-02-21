@@ -312,6 +312,9 @@
       }
     }
   }
+  @include responsive ('tablet') {
+    max-width: 100%;
+  }
 }
 
 
