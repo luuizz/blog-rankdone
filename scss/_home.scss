@@ -30,6 +30,67 @@
             }
         }
     }
+    @include responsive ('laptop') {
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 35rem;
+            grid-gap: 3rem;
+        }
+    }
+    @include responsive ('tabletMd') {
+        padding: 5rem 0;
+        .container {
+            grid-template-columns: 1fr;
+            grid-gap: 4rem;
+            .left-container {
+                .title {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    margin-bottom: 4rem;
+                }
+                .info {
+                    h3 {
+                        max-width: 100%;
+                        text-align: center;
+                    }
+                }
+            }
+            .right-container {
+                max-width: 100%;
+                h4 {
+                    text-align: center;
+                }
+            }
+        }
+    }
+    @include responsive ('mobile') {
+        padding: 4rem 0;
+        .container {
+            grid-gap: 0;
+            .left-container {
+                border-bottom: 1px solid rgba(0,0,0,.1);
+                padding-bottom: 4rem;
+                .title {
+                    margin-bottom: 3rem;
+                    h2 {
+                        margin-top: 1.4rem;
+                    }
+                }
+            }
+            .right-container {
+                .all {
+                    margin-top: 3rem;
+                    .item-post {
+                        &:not(:last-child) {
+                            padding-bottom: 2rem;
+                            margin-bottom: 2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 .sephr {

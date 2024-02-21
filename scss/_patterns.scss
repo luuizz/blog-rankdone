@@ -132,23 +132,22 @@
         transition: color 0.3s ease;
       }
     }
-    @media (max-width: 768px) {
+    @include responsive ('mobile') {
       .image {
         height: 20rem;
         margin-bottom: 2rem;
       }
       .info {
+        flex: 1;
+        h3 {
+          font-size: 2.4rem;
+        }
         .top-info {
           justify-content: center;
           ul {
             display: none;
           }
         }
-      }
-    }
-    @include responsive ('mobile') {
-      .info {
-        flex: 1;
       }
     }
   }
@@ -224,9 +223,6 @@
     @media (max-width: 768px) {
       max-width: 100%;
       justify-content: center;
-      .info {
-        flex: initial;
-      }
     }
   }
 
