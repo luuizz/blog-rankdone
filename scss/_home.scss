@@ -173,6 +173,63 @@
             }
         }
     }
+    @include responsive ('laptopMd') {
+        .container {
+            .title {
+                max-width: 36rem;
+            }
+        }
+    }
+    @include responsive ('tablet') {
+        padding: 4rem 0;
+        .container {
+            flex-direction: column;
+            gap: 3.2rem;
+            .title {
+                max-width: 48rem;
+            }
+            .form {
+                width: 100%;
+                max-width: 100%;
+                .newsletter-rankdone {
+                    .fields {
+                        max-width: 65%;
+                    }
+                    button {
+                        width: 100%;
+                        max-width: 34%;
+                    }
+                }
+            }
+        }
+    }
+    @include responsive ('mobile') {
+        .container {
+            .form {
+                .newsletter-rankdone {
+                    flex-direction: column;
+                    .fields {
+                        max-width: 100%;
+                        .inputs {
+                            flex-direction: column;
+                            gap: 0.8rem;
+                            input {
+                                &:nth-child(2) {
+                                    margin-left: 0;
+                                }
+                            }
+                        }
+                        .ad {
+                            display: none;
+                        }
+                    }
+                    button {
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+    }
 }
 
 .s-all-posts {
