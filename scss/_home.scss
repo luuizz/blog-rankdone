@@ -298,4 +298,50 @@
             }
         }
     }
+    @include responsive('laptop') {
+        .container {
+            gap: 4rem;
+            .left-area {
+                max-width: 46rem;
+            }
+            .right-area {
+                .image {
+                    height: 35.2rem;
+                }
+            }
+        }
+    }
+    @include responsive('tabletMd') {
+        .container {
+            flex-direction: column;
+            .left-area {
+                max-width: 100%;
+                text-align: center;
+                p {
+                    display: inline-block;
+                    width: 58.2rem;
+                    margin: 0 auto;
+                    margin-bottom: 2.4rem;
+                }
+            }
+        }
+    }
+    @include responsive('mobile') {
+        padding: 6rem 0;
+        .container {
+            .left-area {
+                h4 {
+                    margin-bottom: 1.6rem;
+                }
+                p {
+                    width: 100%;
+                }
+            }
+            .right-area {
+                .image {
+                    height: auto;
+                }
+            }
+        }
+    }
 }
