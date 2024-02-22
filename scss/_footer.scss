@@ -94,4 +94,73 @@ footer {
             }
         }
     }
+    @include responsive('laptopMd') {
+        padding-top: 5.6rem;
+        .container {
+            .main {
+                .left {
+                    gap: 4rem;
+                }
+            }
+        }
+    }
+    @include responsive ('tablet') {
+        .container {
+            .main {
+                .left {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
+        }
+    }
+    @include responsive('mobile') {
+        .container {
+            gap: 4rem;
+            .top {
+                flex-direction: column;
+                gap: 4rem;
+                .logo-footer {
+                    max-width: 20rem;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+            .main {
+                flex-direction: column-reverse;
+                gap: 4rem;
+                .left {
+                    max-width: 100%;
+                    width: 100%;
+                }
+                .btn-contact {
+                    width: 100%;
+                    strong {
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+            .bottom {
+                flex-direction: column;
+                gap: 2.4rem;
+                p, a {
+                    text-align: center;
+                }
+            }
+        }
+    }
+    @include responsive('mobileSm') {
+        padding-top: 4rem;
+        .container {
+            .top {
+                .socials {
+                    flex-direction: column;
+                    span {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
 }

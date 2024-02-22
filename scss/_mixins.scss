@@ -26,6 +26,7 @@ $breakpoints: (
     'tablet': 991px,
     'tabletMd': 768px,
     'mobile': 560px,
+    'mobileSm': 460px,
 );
 
 @mixin responsive($breakpoints-name) {
