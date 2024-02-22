@@ -1,0 +1,125 @@
+.s-post-details {
+    background-color: var(--gray-900);
+    padding: 7.2rem 0;
+    .container {
+        .top-details {
+            margin-bottom: 7.2rem;
+            @include flexCenterJustify;
+            .breadcrumbs {
+                @include flex-center;
+                li {
+                    position: relative;
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        top: .4rem;
+                        right: -2.5rem;
+                        width: 1rem;
+                        height: 1rem;
+                        background: url("../assets/icon-arrow-right-chev.svg") no-repeat center center;
+                    }
+                    &:not(:first-child) {
+                        margin-left: 4rem;
+                    }
+                    &:last-child {
+                        &::after {
+                            display: none;
+                        }
+                    }
+                    a {
+                        display: block;
+                        font-weight: bold;
+                        font-family: var(--font-title);
+                        line-height: 105%;
+                        color: var(--gray-400);
+                        font-size: 1.5rem;
+                        transition: color .3s ease;
+                        &:hover {
+                            color: var(--white);
+                        }
+                    }
+                    span {
+                        font-size: 1.5rem;
+                        display: block;
+                        color: var(--white);
+                        font-weight: bold;
+                        font-family: var(--font-title);
+                    }
+                }
+            }
+            .btns {
+                a {
+                    @include flex-center;
+                    font-size: 1.6rem;
+                    line-height: 100%;
+                    color: var(--white);
+                    font-family: var(--font-title);
+                    gap: 0.8rem;
+                    transition: filter .3s ease;
+                    &:hover {
+                        filter: brightness(0.5);
+                    }
+                }
+            }
+        }
+        .main {
+            @include flexCenterJustify;
+            .left-title {
+                width: 100%;
+                max-width: 48.8rem;
+                h1 {
+                    color: var(--white);
+                    margin-bottom: 3.2rem;
+                    font-size: 4rem;
+                }
+                .author {
+                    @include flex-center;
+                    gap: 1.6rem;
+                    margin-bottom: 2.4rem;
+                    .avatar-author {
+                        overflow: hidden;
+                        width: 4.8rem;
+                        height: 4.8rem;
+                        border-radius: 100%;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                    h6 {
+                        color: var(--white);
+                        font-size: 1.4rem;
+                    }
+                }
+                ul {
+                    @include flex-center;
+                    gap: 2.4rem;
+                    li {
+                        @include flex-center;
+                        gap: 0.8rem;
+                        h6 {
+                            color: var(--white);
+                            font-size: 1.4rem;
+                        }
+                    }
+                }
+            }
+            .right-container {
+                width: 100%;
+                max-width: 59.2rem;
+                .image {
+                    overflow: hidden;
+                    border-radius: 0.8rem;
+                    width: 59.2rem;
+                    height: 32rem;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+}
