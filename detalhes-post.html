@@ -3,11 +3,274 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/plugins.css">
+    <link rel="stylesheet" href="./css/main.css">
     <title>Detalhamento do post | Blog Rankdone</title>
 </head>
 <body>
     
-    <h1>Detalhes do post</h1>
+    <header>
+        <div class="container">
+            <a href="/" class="logo" title="Ir para página inicial">
+                <img src="./assets/logo-black.svg" alt="Logo da Rankdone">
+            </a>
 
+            <nav>
+                <ul>
+                    <li>
+                        <a href="https://rankdone.com/" class="link" title="Saber mais sobre a Rankdone">Conheça a Rankdone</a>
+                    </li>
+                    <li>
+                        <a href="https://www2.rankdone.com/pt_BR/sign-up" class="link" title="Testar grátis por 10 dias">Teste grátis por 10 dias</a>
+                    </li>
+                    <li>
+                        <a href="https://rankdone.com/funcionalidades-software-recrutamento-selecao-testes-online-assessment-mapa-de-perfil/" class="link" title="Conhecer as funcionalidades">Funcionalidades</a>
+                    </li>
+                    <li>
+                        <a href="https://rankdone.com/contato-empresas/" class="link" title="Entrar em contato">Contato</a>
+                    </li>
+                </ul>
+
+                <form action="" class="search">
+                    <input type="text" placeholder="Pesquise por artigo ou tema">
+                    <button type="submit">
+                        <img src="./assets/icon-search.svg" alt="Ícone de uma lupa" title="Pesquisar">
+                    </button>
+                </form>
+
+                <button class="hamburger hamburger--collapse" id="js-btn-mobile" type="button">
+                    <span class="hamburger-box">
+                      <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+            </nav>
+
+
+        </div>
+
+        <div class="menu-mobile">
+            <ul>
+                <li>
+                    <a href="#" class="link">Conheça a Rankdone</a>
+                </li>
+                <li>
+                    <a href="#" class="link">Teste grátis por 10 dias</a>
+                </li>
+                <li>
+                    <a href="#" class="link">Funcionalidades</a>
+                </li>
+                <li>
+                    <a href="#" class="link">Contato</a>
+                </li>
+            </ul>
+
+            <form action="" class="search">
+                <input type="text" placeholder="Pesquise por artigo ou tema">
+                <button type="submit">
+                    <img src="./assets/icon-search.svg" alt="Ícone de uma lupa" title="Pesquisar">
+                </button>
+            </form>
+        </div>
+    </header>
+
+    <section class="s-post-details">
+        <div class="container">
+            <div class="top-details">
+                <ul class="breadcrumbs">
+                    <li>
+                        <a href="/" title="Voltar para início">
+                            <img src="./assets/icon-home.svg" alt="Ícone de uma casa">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">FAQ</a>
+                    </li>
+                    <li>
+                        <span>Página atual</span>
+                    </li>
+                </ul>
+                <div class="btns">
+                    <a href="/" title="Voltar para o início">
+                        <img src="./assets/icon-arrow.svg" alt="Ícone de uma seta">
+                        <span>Voltar para o início</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="main">
+                <div class="left-title">
+                    <h1>Ranqueamento de currículo por IA: conheça os 5 principais benefícios</h1>
+                    <a href="#" class="author">
+                        <div class="avatar-author">
+                            <img src="./assets/image.webp" alt="Avatar do autor">
+                        </div>
+                        <h6>Joyce Bambach</h6>
+                    </a>
+
+                    <ul>
+                        <li>
+                            <img src="./assets/icon-calendar-purple.svg" alt="Ícone de um calendário">
+                            <h6>16, Fev 2023</h6>
+                        </li>
+                        <li>
+                            <img src="./assets/icon-time.svg" alt="Ícone de um relógio">
+                            <h6>12 min de leitura</h6>
+                        </li>
+                        <li>
+                            <img src="./assets/icon-views.svg" alt="Ícone de uma visualização">
+                            <h6>93 Views</h6>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right-container">
+                    <div class="image">
+                        <img src="./assets/image-post-xl.webp" alt="Post 01">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="s-news">
+        <div class="container">
+            <div class="title">
+                <img src="./assets/img-newsletter.svg" title="Rankdone News" alt="Rankdone NewsLetter. Imagem de uma carta aberta com o logo da Rankdone na parte de cima">
+                <h6>Inscreva-se para receber uma dose semanal de conteúdos grátis no seu e-mail!</h6>
+            </div>
+            <div class="form">
+                <form action="" class="newsletter-rankdone" method="post">
+                    <div class="fields">
+                        <div class="inputs">
+                            <input type="text" name="newsletter-name" id="name" placeholder="Qual o seu nome?">
+                            <input type="email" name="newsletter-mail" id="email" placeholder="Qual o seu e-nome?">
+                        </div>
+                        <span class="ad">
+                            Ao se cadastrar você declara que leu e aceitou a política de privacidade e cookies do site.
+                        </span>
+                    </div>
+                    <button type="submit">Assinar Newsletter</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="top">
+                <a href="/" title="Voltar para página inicial" class="logo-footer">
+                    <img src="./assets/logo-white.svg" alt="Logo da Rankdone">
+                </a>
+
+                <div class="socials">
+                    <span>Acompanhe nas redes</span>
+
+                    <ul>
+                        <li>
+                            <a href="https://www.youtube.com/channel/UC1eZldLQ5_khaOmo_2dUF3Q" target="_blank">
+                                <img src="./assets/icon-youtube.svg" alt="Ícone do Youtube">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/company/rankdone/" target="_blank">
+                                <img src="./assets/icon-linkedin.svg" alt="Ícone do LinkedIn">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/RanKdoneCorp/" target="_blank">
+                                <img src="./assets/icon-facebook.svg" alt="Ícone do Facebook">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/rankdonecorp" target="_blank">
+                                <img src="./assets/icon-instagram.svg" alt="Ícone do Instagram">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/rankdone" target="_blank">
+                                <img src="./assets/icon-x.svg" alt="Ícone do X/Twitter">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="main">
+                <nav class="left">
+                    <div class="item-nav">
+                        <h6>Home</h6>
+                        <ul>
+                            <li>
+                                <a href="">Artigos</a>
+                            </li>
+                            <li>
+                                <a href="">Mais acessados</a>
+                            </li>
+                            <li>
+                                <a href="">Testes para RH</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="item-nav">
+                        <h6>Categorias</h6>
+                        <ul>
+                            <li>
+                                <a href="">Dicas RH</a>
+                            </li>
+                            <li>
+                                <a href="">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="">IA e RH</a>
+                            </li>
+                            <li>
+                                <a href="">Recursos Humanos</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="item-nav">
+                        <h6>Nossas políticas</h6>
+                        <ul>
+                            <li>
+                                <a href="">Política de Privacidade</a>
+                            </li>
+                            <li>
+                                <a href="">Política Comercial</a>
+                            </li>
+                            <li>
+                                <a href="">Termos de Uso</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="item-nav">
+                        <h6>Institucional</h6>
+                        <ul>
+                            <li>
+                                <a href="">Conheça a Rankdone</a>
+                            </li>
+                            <li>
+                                <a href="">Conheça a RIA</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <a href="https://api.whatsapp.com/send?phone=5511964290501&text=rankdone" class="btn-contact" target="_blank">
+                    <img src="./assets/icon-whatsapp.svg" alt="Ícone do WhatsApp">
+                    <strong>Fale agora com um de <br /> nossos especialistas</strong>
+                </a>
+            </div>
+
+            <div class="bottom">
+                <p><span id="current-year">©2023</span> Rankdone - Todos os direitos reservados</p>
+
+                <p>Desenvolvido por <a href="https://luizricardodsgn.com.br/" title="Acessar site" target="_blank">Luiz Ricardo Design</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/plugins.js"></script>
+    <script src="./js/all.js"></script>
 </body>
 </html>
