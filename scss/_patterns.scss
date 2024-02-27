@@ -326,3 +326,18 @@
     text-transform: uppercase;
     color: var(--purple-500)
 }
+
+.socials-share {
+  span {
+      font-size: 1.6rem;
+      display: inline-block;
+      font-family: var(--font-title);
+      font-weight: bold;
+      line-height: 100%;
+      margin-bottom: 1.6rem;
+  }
+  .socials {
+      @include flex-center;
+      gap: 3.2rem;
+  }
+}
