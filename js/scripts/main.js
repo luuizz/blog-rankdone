@@ -21,4 +21,20 @@ var slidePostRel = new Swiper(".swiper-posts-rel", {
         prevEl: ".swiper-posts-rel .navigation .btn-prev",
     },
     speed: 600,
+    breakpoints: {
+        320: {
+            slidesPerView: 1.1,
+            spaceBetween: 15
+        },
+        500: {
+            slidesPerView: 1.5
+        },
+        768: {
+            slidesPerView: 2.5,
+        },
+        1100: {
+            slidesPerView: 2,
+            spaceBetween: 32
+        },
+    }
 })
