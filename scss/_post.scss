@@ -232,6 +232,7 @@
                             }
                             span {
                                 color: var(--black);
+                                font-weight: bold;
                             }
                         }
                         &:hover {
@@ -244,7 +245,8 @@
                         }
                         span {
                             flex: 1;
-                            font-weight: 400;
+                            font-family: var(--font-title);
+                            font-weight: normal;
                             font-size: 1.6rem;
                             line-height: 150%;
                             color: var(--gray-600);
