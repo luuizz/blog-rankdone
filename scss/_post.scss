@@ -413,4 +413,52 @@
             }
         }
     }
+    @include responsive('laptopMd') {
+        .container {
+            .swiper-posts-rel {
+                .swiper-wrapper {
+                    .swiper-slide {
+                        .card-post-default {
+                            max-width: 42rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @include responsive('tablet') {
+        padding: 8rem 0;
+        .container {
+            flex-direction: column;
+            .left-content {
+                max-width: 56rem;
+                @include flex-center;
+                flex-direction: column;
+                text-align: center;
+            }
+            .swiper-posts-rel {
+                width: inherit;
+                .swiper-wrapper {
+                    .swiper-slide {
+                        .card-post-default {
+                            max-width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @include responsive('mobileSm') {
+        .container {
+            .swiper-posts-rel {
+                .swiper-wrapper {
+                    .card-post-default {
+                        .image {
+                            height: 16rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
