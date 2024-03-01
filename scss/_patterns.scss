@@ -566,3 +566,15 @@
     }
   }
 }
+
+.top-filters {
+  @include flexCenterJustify;
+  margin-bottom: 5.6rem;
+  h2 {
+      font-size: 4rem;
+  }
+  @include responsive('mobile') {
+    flex-direction: column;
+    gap: 3.2rem;
+  }
+}

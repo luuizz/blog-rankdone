@@ -15,7 +15,6 @@
         }
         .main-area {
             .top-filters {
-                @include flexCenterJustify;
                 margin-bottom: 4rem;
             }
         }
@@ -25,10 +24,6 @@
         .container {
             .top-area {
                 text-align: center;
-            }
-            .top-filters {
-                flex-direction: column;
-                gap: 3.2rem;
             }
         }
     }

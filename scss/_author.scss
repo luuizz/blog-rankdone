@@ -124,22 +124,7 @@
 
 .s-my-articles {
     padding: 6.4rem 0;
-    .container {
-        .top-filters {
-            @include flexCenterJustify;
-            margin-bottom: 5.6rem;
-            h2 {
-                font-size: 4rem;
-            }
-        }
-    }
     @include responsive('mobile') {
         padding: 5.6rem 0;
-        .container {
-            .top-filters {
-                flex-direction: column;
-                gap: 3.2rem;
-            }
-        }
     }
 }
