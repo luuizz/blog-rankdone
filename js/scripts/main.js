@@ -39,6 +39,17 @@ var slidePostRel = new Swiper(".swiper-posts-rel", {
     }
 })
 
+// Seção de categorias
+
+var slidesCategories = new Swiper(".swiper-filter", {
+    slidesPerView: "auto",
+    speed: 500,
+    navigation: {
+        nextEl: ".s-categories .top-area .arrows .next-filter",
+        prevEl: ".s-categories .top-area .arrows .prev-filter",
+    }
+})
+
 // Tópicos por navegação
 
 const listTopics = document.querySelector(".js-topics");
