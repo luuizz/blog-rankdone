@@ -12,7 +12,7 @@
 
 @mixin flex-start {
     display: flex;
-    align-items: start;
+    align-items: flex-start;
 }
 
 @mixin flex-total-center {
