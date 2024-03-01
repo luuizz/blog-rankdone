@@ -17,7 +17,7 @@
             flex: 1;
             max-width: 38.4rem;
             margin-top: 4rem;
-            .all {
+            .all-populars {
                 margin-top: 4.8rem;
                 .item-post {
                     position: relative;
@@ -79,7 +79,7 @@
                 }
             }
             .right-container {
-                .all {
+                .all-populars {
                     margin-top: 3rem;
                     .item-post {
                         &:not(:last-child) {
@@ -252,12 +252,6 @@
                 }
             }
         }
-        .all {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 3.2rem;
-            margin-bottom: 6.4rem;
-        }
         .btn-primary {
             margin: 0 auto;
             display: table;
@@ -265,20 +259,6 @@
     }
     @include responsive('laptop') {
         padding: 5.6rem 0;
-        .container {
-            .all {
-                margin-bottom: 4rem;
-                gap: 2rem;
-            }
-        }
-    }
-
-    @include responsive ('tablet') {
-        .container {
-            .all {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
     }
     @include responsive ('tabletMd') {
         padding: 5rem 0;
@@ -292,10 +272,6 @@
                 h2 {
                     margin-bottom: 2rem;
                 }
-            }
-            .all {
-                grid-template-columns: 1fr;
-                gap: 3.2rem;
             }
             .btn-primary {
                 width: 95%;
