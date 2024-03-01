@@ -38,3 +38,17 @@ var slidePostRel = new Swiper(".swiper-posts-rel", {
         },
     }
 })
+
+// Dropdown de filtro
+
+const btnDropDown = document.querySelector(".js-dropdown-filter");
+
+function toggleDropdown(event) {
+    if (event.target.closest('.js-dropdown-filter')) {
+        btnDropDown.classList.toggle("active");
+    } else {
+        btnDropDown.classList.remove("active");
+    }
+}
+
+document.addEventListener("click", toggleDropdown);
